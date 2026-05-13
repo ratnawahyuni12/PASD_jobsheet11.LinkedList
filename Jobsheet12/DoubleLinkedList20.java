@@ -64,13 +64,12 @@ public class DoubleLinkedList20 {
     public void print() {
         if (IsEmpty()) {
             System.out.println("Linked List masih kosong.");
-            return;
-        }
-
-        Node20 current = head;
-        while (current != null) {
-            current.data.tampil();
-            current = current.next;
+        } else {
+            Node20 current = head;
+            while (current != null) {
+                current.data.tampil();
+                current = current.next;
+            }
         }
     }
 
